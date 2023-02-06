@@ -49,8 +49,7 @@ void push(stack_t* s, void* item) {
  */
 void freestack(stack_t* s) {
   while (s->size) {
-    void* ret  = pop(s);
-    free(ret);
+    pop(s);
   }
   free(s);
 }

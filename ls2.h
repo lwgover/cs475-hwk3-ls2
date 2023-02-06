@@ -8,5 +8,6 @@
 #define INDENT "    "
 
 // TODO: Function declarations here for ls2
+void mode1(char dir[]);
 
 #endif

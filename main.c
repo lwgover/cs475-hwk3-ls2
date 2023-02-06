@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "stack.h"
 #include "ls2.h"
+#include "draw.h"
 
 /**
  * Main function
@@ -20,5 +21,9 @@ int main(int argc, char* argv[]) {
 
 	// free up stack
 	freestack(s);
+
+	printf("%s",argv[1]);
+	//mode1(argv[1]);
+	draw("./nixon.txt");
 	return 0;
 }
