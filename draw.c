@@ -5,7 +5,6 @@ int draw(char dir[])
 {
     FILE *file;
 
-
     // opening file 2 in write mode
     file = fopen(dir, "w");
 
