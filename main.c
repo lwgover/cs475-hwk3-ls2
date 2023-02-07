@@ -14,9 +14,11 @@ int main(int argc, char* argv[]) {
 		printf("./ls2Sol <path> [exact-match-pattern]\n");
 		return 1;
 	}
-
-	printf("works: %s",argv[1]);
-	mode1(argv[1]);
-	//draw("./nixon.txt");
+	if (argv[2] != NULL){
+		mode2(argv[1],argv[2]);	
+	}else{
+		mode1(argv[1]);
+	}
+	draw("./pretty_picture.txt"); 
 	return 0;
 }
