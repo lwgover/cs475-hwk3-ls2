@@ -9,21 +9,14 @@
  * Usage: ls2 <path> [exact-match-pattern]
  */
 int main(int argc, char* argv[]) {
-	// stack stores the lines to print out
-	stack_t *s = initstack();
 
-	push(s, "Hello1");
-	push(s, "Hello2");
-	push(s, "Hello3");
+	if (argv[1] == NULL){
+		printf("./ls2Sol <path> [exact-match-pattern]\n");
+		return 1;
+	}
 
-	// print stack
-	printstack(s);
-
-	// free up stack
-	freestack(s);
-
-	printf("%s",argv[1]);
-	//mode1(argv[1]);
-	draw("./nixon.txt");
+	printf("works: %s",argv[1]);
+	mode1(argv[1]);
+	//draw("./nixon.txt");
 	return 0;
 }
